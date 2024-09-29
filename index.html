@@ -30,9 +30,10 @@
       console.log(span.split("/")[0]);
       const date = span.split("/")[0];
       const date_arr = date.split("-");
+      //해당요소(date_arr)를 가져와서 join 시키기
       console.log(date_arr.join("."));
 
-      //문자의 양옆 빈칸 제거해서 정리
+      //문자의 양옆 빈칸 제거해서 정리("trim") 가운데는 안됨 양 끝만 가능
       const myName = "    홍 길동       ";
       const myName2 = myName.trim();
       console.log(myName2.length);
