@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>필수패턴 21 - 문자열 관련 내장 함수</title>
+  </head>
+
+  <body>
+    <h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, aliquid!
+    </h1>
+    <p>members: Andy, David, Julia, Paul, Emma, Mechael</p>
+    <span>2023-07-13 / 08:26</span>
+
+    <script>
+      //문자열 자르기
+      const h1 = document.querySelector("h1").innerText;
+      console.log(h1);
+
+      const h1_cut = h1.substr(0, 10);
+      console.log(h1_cut);
+
+      //전체 문자열에서 특정 문자의 위치값 알아보기
+      const p = document.querySelector("p").innerText;
+      console.log(p.indexOf("Sara"));
+
+      //문자열 분리해서 배열로 반환
+      const span = document.querySelector("span").innerText;
+      console.log(span.split("/")[0]);
+      const date = span.split("/")[0];
+      const date_arr = date.split("-");
+      console.log(date_arr.join("."));
+
+      //문자의 양옆 빈칸 제거해서 정리
+      const myName = "    홍 길동       ";
+      const myName2 = myName.trim();
+      console.log(myName2.length);
+    </script>
+  </body>
+</html>
